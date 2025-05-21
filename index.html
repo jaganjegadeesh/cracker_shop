@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cracker Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to Cracker Shop</h1>
+  <form action="place_order.php" method="post">
+    <label>Name: <input type="text" name="name" required></label><br>
+    <label>Phone: <input type="text" name="phone" required></label><br>
+    <label>Address: <textarea name="address" required></textarea></label><br>
+    <label>Select Crackers:</label><br>
+    <input type="checkbox" name="items[]" value="Sparklers"> Sparklers<br>
+    <input type="checkbox" name="items[]" value="Flower Pots"> Flower Pots<br>
+    <input type="checkbox" name="items[]" value="Bombs"> Bombs<br>
+    <button type="submit">Place Order</button>
+  </form>
+</body>
+</html>
