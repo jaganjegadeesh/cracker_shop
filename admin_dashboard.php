@@ -4,8 +4,8 @@ if (!isset($_SESSION['admin'])) {
     header("Location: admin_login.php");
     exit;
 }
+include 'db.php';
 
-$conn = new mysqli("localhost", "root", "", "cracker_shop");
 $orders = $conn->query("SELECT * FROM orders ORDER BY order_time DESC");
 ?>
 

@@ -1,6 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "cracker_shop");
-
+include 'db.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $address = $_POST['address'];
